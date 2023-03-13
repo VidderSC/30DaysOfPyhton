@@ -1,9 +1,9 @@
 # 01. Declare your age as integer variable
 from math import sqrt
-age = 43
+age = 69
 
 # 02. Declare your height as a float variable
-height = 1.75
+height = 1.69
 
 # 03. Declare a variable that store a complex number
 complex = 1 + 1j
