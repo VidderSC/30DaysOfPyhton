@@ -43,30 +43,107 @@ print()
 # Function returning values - Part 1
 # If it doesn't have a return statement will return 'None'.
 print(generate_full_name())
+print(add_two_numbers())
 print()
 
 
-def generate_full_name():  # Declaring the function
+def generate_full_name_two():  # Declaring the function
     first_name = 'Vidders'
     last_name = 'SC'
     space = ' '
     full_name = first_name + space + last_name
-    return full_name
+    return full_name  # We are returning the full name
 
 
-print(generate_full_name())  # Calling the function
+print(generate_full_name_two())  # Calling the function
 
 
-def add_two_numbers():  # Declaring the function
+def add_two_numbers_two():  # Declaring the function
     num_one = 2
     num_two = 3
     total = num_one + num_two
     return total
 
 
-print(add_two_numbers())  # Calling the function
+print(add_two_numbers_two())  # Calling the function
 print()
 
 # Functions with Parameters
 # If our function takes a parameter we should call the function with it
 
+
+def greetings(name):
+    message = name + ', welcome to Python in 30 days!'
+    return message
+
+
+print(greetings("Vidders"))
+
+
+def add_ten(number):
+    ten = 10
+    return number + ten
+
+
+print(add_ten(59))
+
+
+def square_number(number):
+    return number * number
+
+
+print(square_number(2))
+
+
+def sum_of_numbers(number):
+    total = 0
+    for i in range(number+1):
+        total += i
+    return total
+
+
+print(sum_of_numbers(69))
+print()
+
+
+def generate_full_name_three(first_name, last_name):
+    space = " "
+    return first_name + space + last_name
+
+
+# If we have more than one argument, we need to respect the order of
+# the arguments when passing them
+print(generate_full_name_three("Vidders", "SC"))
+
+# If we pass the arguments as Key and Value, the order doesn't matter.
+print(generate_full_name_three(last_name="SC", first_name="Vidders"))
+print()
+
+
+def calculate_age(current_year, birth_year):
+    return current_year - birth_year
+
+
+print(f'Age: {calculate_age(2023, 1954)}')
+
+
+def weight_of_object(mass, gravity):
+    # In order to add the 'N' at the end, we need to convert to string
+    weight = str(mass * gravity) + " Newtons"
+    return weight
+
+
+print(f"Weight of an object: {weight_of_object(100, 9.81)}")
+print()
+
+# Functions with default parameters
+# We can define functions that if no parameters are specified, then
+# the default values will be used.
+
+
+def greet(name="Homer"):
+    return "Hi " + name
+
+
+print(greet())
+print(greet("Vidders"))
