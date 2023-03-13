@@ -147,3 +147,45 @@ def greet(name="Homer"):
 
 print(greet())
 print(greet("Vidders"))
+print()
+
+"""
+# Arbitrary number of arguments
+If we don't know the number of arguments we will pass to our 
+function, we can create a function which can take an arbitrary 
+number of arguments by adding * before the parameter name.
+"""
+
+
+def sum_all_numbers(*numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+
+
+print(sum_all_numbers(2, 3, 5, 9))
+print()
+
+
+def generate_groups(team, *args):
+    print(team)
+    for i in args:
+        print(i)
+
+
+generate_groups("A-Team", "Murdoc", "Hanibal", "Mr. T")
+print()
+
+# You can pass a function as an argument of another function
+
+
+def square_num(num):
+    return num * num
+
+
+def do_something(fun, arg):
+    return (fun(arg))
+
+
+print(do_something(square_num, 3))
