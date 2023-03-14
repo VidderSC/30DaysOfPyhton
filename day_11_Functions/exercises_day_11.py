@@ -4,7 +4,6 @@ from collections import Counter
 import statistics
 from keyword import iskeyword
 
-
 print("### Exercises: Day 11")
 
 print()
