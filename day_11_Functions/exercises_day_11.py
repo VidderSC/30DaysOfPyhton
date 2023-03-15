@@ -1,6 +1,5 @@
 from countries_data import countries_data
 from math import sqrt
-from collections import Counter
 import statistics
 from keyword import iskeyword
 
