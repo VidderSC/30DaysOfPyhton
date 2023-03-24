@@ -36,7 +36,7 @@ finally:
     {Always run this block of code}
 
 """
-Examples:
+# Examples:
 
 try:
     print(10 + "5")
@@ -71,12 +71,10 @@ else:
 finally:
     print('I alway run.')
 
-""" 
 # Packing and Unpacking arguments in Python
-    We can use two operators:
-        - * for tuples
-        - ** for dictionaries
-"""
+# We can use two operators:
+# - * for tuples
+# - ** for dictionaries
 
 # Example:
 
@@ -105,10 +103,10 @@ print()
 
 
 def sum_all(*numbers):
-    s = 0
-    for i in numbers:
-        s += i
-    return s
+    suma = 0
+    for value in numbers:
+        suma += value
+    return suma
 
 
 print(sum_all(1, 2, 3))
