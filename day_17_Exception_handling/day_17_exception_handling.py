@@ -36,40 +36,40 @@ finally:
     {Always run this block of code}
 
 """
-# Examples:
+Examples:
 
-# try:
-#     print(10 + "5")
-# except:
-#     print("something went wrong!")
-#
-# try:
-#     name = input('Enter your name:')
-#     year_born = input('Year you were born:')
-#     age = 2019 - year_born
-#     print(f'You are {name}. And your age is {age}.')
-# except TypeError:
-#     print('Type error occured')
-# except ValueError:
-#     print('Value error occured')
-# except ZeroDivisionError:
-#     print('zero division error occured')
-#
-# try:
-#     name = input('Enter your name:')
-#     year_born = input('Year you were born:')
-#     age = 2019 - int(year_born)
-#     print(f'You are {name}. And your age is {age}.')
-# except TypeError:
-#     print('Type error occured')
-# except ValueError:
-#     print('Value error occured')
-# except ZeroDivisionError:
-#     print('zero division error occured')
-# else:
-#     print('I will run if there are no exceptions')
-# finally:
-#     print('I alway run.')
+try:
+    print(10 + "5")
+except:
+    print("something went wrong!")
+
+try:
+    name = input('Enter your name:')
+    year_born = input('Year you were born:')
+    age = 2019 - year_born
+    print(f'You are {name}. And your age is {age}.')
+except TypeError:
+    print('Type error occured')
+except ValueError:
+    print('Value error occured')
+except ZeroDivisionError:
+    print('zero division error occured')
+
+try:
+    name = input('Enter your name:')
+    year_born = input('Year you were born:')
+    age = 2019 - int(year_born)
+    print(f'You are {name}. And your age is {age}.')
+except TypeError:
+    print('Type error occured')
+except ValueError:
+    print('Value error occured')
+except ZeroDivisionError:
+    print('zero division error occured')
+else:
+    print('I will run if there are no exceptions')
+finally:
+    print('I alway run.')
 
 """ 
 # Packing and Unpacking arguments in Python
