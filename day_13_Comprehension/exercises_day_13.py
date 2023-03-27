@@ -20,7 +20,7 @@ print(flatten)
 print()
 print("03. Using list comprehension create the following list of tuples:")
 
-fibbonazi = [(i, 1, i, i**2, i**3, i**4, i**5) for i in range(11)]
+fibbonazi = [(i, i**0, i, i**2, i**3, i**4, i**5) for i in range(11)]
 print(fibbonazi)
 
 
